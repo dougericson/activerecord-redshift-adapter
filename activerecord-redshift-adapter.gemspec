@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require "activerecord_redshift_adapter/version"
 
 Gem::Specification.new do |s|
- s.name        = 'activerecord-redshift-adapter'
+ s.name        = 'activerecord-redshift-adapter-bulk'
  s.version     = ActiverecordRedshiftAdapter::VERSION
  s.license     = 'New BSD License'
  s.date        = '2014-03-30'

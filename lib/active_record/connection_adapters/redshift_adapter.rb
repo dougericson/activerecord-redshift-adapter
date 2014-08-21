@@ -285,6 +285,10 @@ module ActiveRecord
         true
       end
 
+      def supports_import?
+        true
+      end
+
       class StatementPool < ConnectionAdapters::StatementPool
         def initialize(connection, max)
           super
