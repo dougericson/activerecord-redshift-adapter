@@ -1,4 +1,4 @@
-module ActiverecordRedshift
+module ActiverecordRedshiftBulk
   class TableManager
     attr_reader :default_options
 

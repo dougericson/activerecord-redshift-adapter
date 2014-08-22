@@ -25,7 +25,7 @@ module ActiveRecord
 
       # The postgres drivers don't allow the creation of an unconnected PGconn object,
       # so just pass a nil connection object for the time being.
-      ConnectionAdapters::RedshiftAdapter.new(nil, logger, [host, port, nil, nil, database, username, password], config)
+      ConnectionAdapters::RedshiftBulkAdapter.new(nil, logger, [host, port, nil, nil, database, username, password], config)
     end
   end
 
@@ -233,7 +233,7 @@ module ActiveRecord
     #   as a string of comma-separated schema names. This is backward-compatible with the <tt>:schema_order</tt> option.
     # * <tt>:encoding</tt> - An optional client encoding that is used in a <tt>SET client_encoding TO
     #   <encoding></tt> call on the connection.
-    class RedshiftAdapter < AbstractAdapter
+    class RedshiftBulkAdapter < AbstractAdapter
       class TableDefinition < ActiveRecord::ConnectionAdapters::TableDefinition
         def xml(*args)
           options = args.extract_options!

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>activerecord-redshift-adapter</name>
+	<name>activerecord-redshift-bulk-adapter</name>
 	<comment></comment>
 	<projects>
 	</projects>
