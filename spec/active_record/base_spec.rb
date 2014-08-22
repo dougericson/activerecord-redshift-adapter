@@ -12,7 +12,7 @@ describe ActiveRecord::Base do
   describe 'set UTC timezone for datetime' do
     class TimezoneTest < ActiveRecord::Base
       default_timezone = :jst
-      establish_connection(TEST_CONNECTION_HASH.merge('adapter' => 'redshift', 'read_timezone' => 'UTC'))
+      establish_connection(TEST_CONNECTION_HASH.merge('adapter' => 'redshiftbulk', 'read_timezone' => 'UTC'))
     end
 
     before do

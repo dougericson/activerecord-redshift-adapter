@@ -15,7 +15,7 @@ common: &common
   timeout: 5000
 
 redshiftdb: &redshiftdb
-  adapter: redshift
+  adapter: redshiftbulk
   host: clustername.something.us-east-1.redshift.amazonaws.com
   database: databasename
   port: 5439
