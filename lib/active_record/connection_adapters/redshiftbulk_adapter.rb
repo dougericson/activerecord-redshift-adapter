@@ -233,7 +233,7 @@ module ActiveRecord
     #   as a string of comma-separated schema names. This is backward-compatible with the <tt>:schema_order</tt> option.
     # * <tt>:encoding</tt> - An optional client encoding that is used in a <tt>SET client_encoding TO
     #   <encoding></tt> call on the connection.
-    class RedshiftBulkAdapter < AbstractAdapter
+    class RedshiftbulkAdapter < AbstractAdapter
       class TableDefinition < ActiveRecord::ConnectionAdapters::TableDefinition
         def xml(*args)
           options = args.extract_options!
