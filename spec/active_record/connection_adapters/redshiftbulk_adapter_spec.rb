@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe ActiveRecord::ConnectionAdapters::RedshiftBulkAdapter do
+describe ActiveRecord::ConnectionAdapters::RedshiftbulkAdapter do
   before(:all) do
     @connection =  ActiveRecord::Base.redshift_connection(TEST_CONNECTION_HASH)
 

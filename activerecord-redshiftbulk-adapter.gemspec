@@ -4,8 +4,8 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require "activerecord_redshiftbulk_adapter/version"
 
 Gem::Specification.new do |s|
- s.name        = 'activerecord-redshift-bulk-adapter'
- s.version     = ActiverecordRedshiftBulkAdapter::VERSION
+ s.name        = 'activerecord-redshiftbulk-adapter'
+ s.version     = ActiverecordRedshiftbulkAdapter::VERSION
  s.license     = 'New BSD License'
  s.date        = '2014-03-30'
  s.summary     = "Rails 3 database adapter support for AWS RedShift."

@@ -25,7 +25,7 @@ module ActiveRecord
 
       # The postgres drivers don't allow the creation of an unconnected PGconn object,
       # so just pass a nil connection object for the time being.
-      ConnectionAdapters::RedshiftBulkAdapter.new(nil, logger, [host, port, nil, nil, database, username, password], config)
+      ConnectionAdapters::RedshiftbulkAdapter.new(nil, logger, [host, port, nil, nil, database, username, password], config)
     end
   end
 
@@ -250,7 +250,7 @@ module ActiveRecord
         end
       end
 
-      ADAPTER_NAME = 'RedshiftBulk'
+      ADAPTER_NAME = 'Redshiftbulk'
 
       NATIVE_DATABASE_TYPES = {
         :primary_key => "bigint primary key",
